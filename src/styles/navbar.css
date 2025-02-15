@@ -1,0 +1,185 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: transparent;
+  padding: 10px 20px;
+  color: white;
+  direction: rtl;
+  z-index: 1100;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.nav-left,
+.nav-right {
+  display: flex;
+  align-items: center;
+}
+
+.nav-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  white-space: nowrap;
+}
+
+/* Links */
+a {
+  color: white;
+  text-decoration: none;
+  font-size: inherit;
+}
+
+/* Logo */
+.navbar-logo {
+  height: 50px;
+  width: auto;
+}
+
+/* Dropdown Menu */
+.dropdown {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.dropdown-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 10px 15px;
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 45px;
+  right: 0;
+  background: white;
+  padding: 15px;
+  border-radius: 12px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.3);
+  display: flex;
+  flex-direction: column;
+  z-index: 1000;
+  min-width: 220px;
+}
+
+.dropdown-menu button,
+.dropdown-menu a {
+  background: none;
+  border: none;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 15px;
+  text-align: right;
+  cursor: pointer;
+  color: black;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.dropdown-menu button:hover,
+.dropdown-menu a:hover {
+  background: #f0f0f0;
+}
+
+/* Mobile Menu */
+.mobile-menu {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 250px;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.9);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 60px 20px 20px;
+  transform: translateX(100%);
+  transition: transform 0.3s ease-in-out;
+  z-index: 2000;
+}
+
+.mobile-menu.open {
+  transform: translateX(0);
+}
+
+.mobile-nav {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.mobile-nav a,
+.mobile-nav button {
+  display: block;
+  width: 100%;
+  text-align: right;
+  color: white;
+  font-size: 18px;
+  padding: 12px 15px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.mobile-nav a:last-child,
+.mobile-nav button:last-child {
+  border-bottom: none;
+}
+
+.mobile-nav a:hover,
+.mobile-nav button:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+/* Close Mene Button - Mobile */
+.close-menu {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 28px;
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  cursor: pointer;
+  z-index: 3000;
+  padding: 10px;
+}
+
+/* Hamburger Button */
+.menu-icon {
+  display: none;
+  font-size: 28px;
+  cursor: pointer;
+  color: white;
+  background: none;
+  border: none;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .nav-center {
+    display: none;
+  }
+
+  .menu-icon {
+    display: block;
+  }
+}

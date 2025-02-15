@@ -1,0 +1,21 @@
+.not-found-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: url("/images/leader.png") no-repeat center center/cover;
+  text-align: center;
+  gap: 15px;
+  color: white;
+}
+
+.not-found-container img {
+  width: 120px;
+  height: auto;
+  margin-top: 10px;
+}
+
+.not-found {
+  font-size: 3rem !important;
+}

@@ -1,0 +1,87 @@
+@import url("https://fonts.googleapis.com/css2?family=Volkhov:wght@400;700&display=swap");
+
+@font-face {
+  font-family: "Spacer Bold";
+  src: url("/fonts/spacer-bold.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "Spacer";
+  src: url("/fonts/spacer.otf") format("opentype");
+}
+
+body {
+  font-family: "Spacer", sans-serif;
+  margin: 0;
+  padding: 0;
+  background: transparent;
+}
+
+.hebrew {
+  font-family: "Spacer", sans-serif;
+}
+
+.hebrew-bold {
+  font-family: "Spacer Bold", sans-serif;
+  font-size: 25px;
+}
+
+.english {
+  font-family: "Volkhov", serif;
+  font-weight: 400;
+  font-style: normal;
+  direction: ltr;
+  text-align: left !important;
+  unicode-bidi: plaintext;
+}
+
+.english-bold {
+  font-family: "Volkhov", serif;
+  font-weight: 700;
+  font-style: normal;
+  letter-spacing: 1px;
+  font-size: 20px;
+  direction: ltr;
+  unicode-bidi: plaintext;
+}
+
+.btn-bordeaux {
+  background: #8a171a;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin-left: 10px;
+  cursor: pointer;
+  border-radius: 50px;
+  font-size: 18px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 120px;
+  height: 40px;
+  gap: 8px;
+  transition: background 0.3s ease;
+}
+
+.btn-bordeaux:hover {
+  background: #a51c1f;
+}
+
+.btn-bordeaux svg {
+  width: 16px;
+  height: 14px;
+  margin-left: 8px;
+}
+
+.brigade-logo {
+  width: 60px;
+  height: auto;
+  display: block;
+  margin: 10px auto;
+}
+
+.text {
+  direction: rtl;
+  unicode-bidi: plaintext;
+}
