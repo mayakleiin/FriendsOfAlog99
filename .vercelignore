@@ -1,0 +1,11 @@
+# Ignore large video files
+public/videos/*
+*.mp4
+*.mov
+*.avi
+
+# Ignore build and node_modules
+node_modules/
+dist/
+.vercel/
+.git/
