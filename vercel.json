@@ -4,7 +4,11 @@
       "source": "/sitemap.xml",
       "headers": [
         { "key": "Access-Control-Allow-Origin", "value": "*" },
-        { "key": "Content-Type", "value": "application/xml" }
+        { "key": "Content-Type", "value": "application/xml" },
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=0, must-revalidate"
+        }
       ]
     },
     {
@@ -13,6 +17,18 @@
         { "key": "Access-Control-Allow-Origin", "value": "*" },
         { "key": "Content-Type", "value": "text/plain" }
       ]
+    }
+  ],
+  "redirects": [
+    {
+      "source": "/sitemap.xml",
+      "destination": "/sitemap.xml",
+      "statusCode": 200
+    },
+    {
+      "source": "/robots.txt",
+      "destination": "/robots.txt",
+      "statusCode": 200
     }
   ],
   "rewrites": [
