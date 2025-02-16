@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://alog-web.vercel.app/sitemap.xml
