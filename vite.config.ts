@@ -8,10 +8,10 @@ function htmlPlugin(): PluginOption {
       return html.replace(
         "</head>",
         `
+        <meta name="description" content="עמותת אלוג 99">
         <meta name="keywords" content="אלוג 99, אלו"ג 99, אלוג, אלו"ג, אוגדה 99, חטיבה טכנולוגיסטית, ידידי החטיבה הטכנולוגיסטית">
         <meta name="author" content="Friends of Alog 99">
-        <meta property="og:title" content= "עמותת ידידי החטיבה הטכנולוגיסטית">
-        <meta property="og:description" content= "אלו"ג 99">
+        <meta property="og:title" content= "עמותת ידידי החטיבה הטכנולוגיסטית - אלוג 99">
         <meta property="og:image" content="https://alog99.com/images/logo.png">
         <meta property="og:url" content="https://alog99.com">
         <meta property="og:type" content="website">
