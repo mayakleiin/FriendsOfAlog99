@@ -14,14 +14,13 @@
   margin: auto;
 }
 
-/* שמירה על יחס 16:9 */
-.vimeo-container {
-  position: relative;
-  width: 100%;
+.video-wrapper::before {
+  content: "";
+  display: block;
   padding-top: 56.25%;
 }
 
-.vimeo-container iframe {
+.video-wrapper iframe {
   position: absolute;
   top: 0;
   left: 0;
@@ -31,7 +30,6 @@
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
-/* כפתור "נגן סרטון מלא" */
 .unmute-btn {
   position: absolute;
   top: 50%;
@@ -51,7 +49,6 @@
   background: rgba(0, 0, 0, 0.9);
 }
 
-/* רספונסיביות */
 @media (min-width: 1024px) {
   .video-wrapper {
     width: 80vw;
