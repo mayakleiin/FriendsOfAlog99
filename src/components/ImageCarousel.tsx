@@ -4,7 +4,7 @@ import "swiper/swiper-bundle.css";
 import "../styles/carousel.css";
 
 const images = Array.from(
-  { length: 10 },
+  { length: 8 },
   (_, index) => `/images/carousel/Image${index + 1}.png`
 );
 
