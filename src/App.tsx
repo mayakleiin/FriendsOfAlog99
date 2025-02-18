@@ -1,7 +1,7 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import HeroSection from "./components/HeroSection";
-import ImageCarousel from "./components/ImageCarousel";
+// import ImageCarousel from "./components/ImageCarousel";
 import LeaderSection from "./components/LeaderSection";
 import VisionSection from "./components/VisionSection";
 import MissionSection from "./components/MissionSection";
@@ -27,7 +27,7 @@ function App() {
                 <HeroSection />
                 <VideoSection />
                 <div className="sections-container">
-                  <ImageCarousel />
+                  {/* <ImageCarousel /> */}
                   <section id="about">
                     <LeaderSection />
                   </section>
